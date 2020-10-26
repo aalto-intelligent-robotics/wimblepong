@@ -63,7 +63,7 @@ class Ball():
                                         # prevent multiple reflections
         self.color = (255, 255, 255)    # Color of the ball
         self.rect = None                # Rectangle describing the square shaped ball
-        self.MAX_BOUNCE_ANGLE = 75      # Limit the maximum reflection angle
+        self.MAX_BOUNCE_ANGLE = 65      # Limit the maximum reflection angle
         self.vector = None              # The x and y velocity vector of the ball
         self.GAME_AREA_RESOLUTION = GAME_AREA_RESOLUTION
         self.SCOREBOARD_HEIGHT = SCOREBOARD_HEIGHT
@@ -138,7 +138,7 @@ class Ball():
         else:
             u = -1
         # Reset the speed multiplyer to the initial value
-        self.speed_mul = 0.4
+        self.speed_mul = 0.42
 
         vx = d*3*(math.cos(math.radians(bounce_angle)) + 1)*self.speed_mul
         vy = u*6*math.sin(math.radians(bounce_angle))*self.speed_mul
