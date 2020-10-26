@@ -229,7 +229,7 @@ class Wimblepong(gym.core.Env):
 
         self.action_space = gym.spaces.Discrete(3)      # Define a discrete action
                                                         # space with 3 possible actions
-        self.frameskip = 2, 5
+        self.frameskip = 3
 
         # Load scoreboard font
         self.scoreboard_font = self.load_font()
