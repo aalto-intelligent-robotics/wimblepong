@@ -183,10 +183,10 @@ class Player():
         # Reset the player position to the center of the arena and set the player color
         if self.player_number == 1:
             self.x = self.paddle_padding
-            self.color = (120, 188, 97)
+            self.color = (75, 170, 106)
         else:
             self.x = self.GAME_AREA_RESOLUTION[0] - self.paddle_padding + 1
-            self.color = (195, 60, 84)
+            self.color = (202, 46, 85)
         self.y = self.GAME_AREA_RESOLUTION[1]//2 + self.SCOREBOARD_HEIGHT
         self.update_rect()
 
@@ -216,7 +216,7 @@ class Wimblepong(gym.core.Env):
         arena_x_center = self.SCREEN_RESOLUTION[1]//2
         arena_y_center = (self.SCREEN_RESOLUTION[0]-self.SCOREBOARD_HEIGHT)//2+self.SCOREBOARD_HEIGHT
         self.GAME_AREA_CENTER = (arena_x_center, arena_y_center)  # The center of the game arena
-        self.BACKGROUND_COLOR = np.array([43, 48, 58], np.uint8)  # The arenas background color
+        self.BACKGROUND_COLOR = np.array([33, 1, 36], np.uint8)  # The arenas background color
         self.SCOREBOARD_BORDER = 4
         self.SEPARATOR_BORDER = 3
 
