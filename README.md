@@ -27,7 +27,7 @@ The interface is designed to be used like the OpenAI Gym environment.
 - Takes the input action as parameter (0: STAY, 1: UP, 2: DOWN): Takes either one
 action if the opponent is a SimpleAI or a tuple of two actions if two agents are
 playing against each other.
-- Returns observation: A returned observation is an array of (210, 160, 3) RGB values.
+- Returns observation: A returned observation is an array of (200, 200, 3) RGB values.
 If the game is played against an agent that uses the absolute values, such as SimpleAI,
 the returned observation is one array. If two agents that use pixel observations play
 against each other, the returned values is a tuple of two observations, one for each player.
